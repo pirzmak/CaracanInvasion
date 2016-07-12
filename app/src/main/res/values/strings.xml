@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">CaracanInvasion</string>
     <string name="action_settings">Settings</string>
+    <string name="start">Start</string>
+    <string name="caracan">CARACAN</string>
+    <string name="invasion">INVASION</string>
+    <string name="End">Koniec</string>
 </resources>

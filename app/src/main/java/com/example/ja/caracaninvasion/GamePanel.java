@@ -64,8 +64,8 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback{
 
         bg = new Background(BitmapFactory.decodeResource(getResources(),R.drawable.szejm));
         player = new Player(BitmapFactory.decodeResource(getResources(),R.drawable.a),75,71);
-        caracans = new ArrayList<Caracan>();
-        helps = new ArrayList<Help>();
+        caracans = new ArrayList<>();
+        helps = new ArrayList<>();
         carTime=  System.nanoTime();
 
         thread.setRunning(true);
@@ -115,7 +115,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback{
 
             if(player.getScore()>30 && rand.nextInt(100)==0 && helps.size()==0){
 
-                helps.add(new Help(BitmapFactory.decodeResource(getResources(),R.drawable.help),50,50,1));
+                helps.add(new Help(BitmapFactory.decodeResource(getResources(),R.drawable.car),50,50,1));
 
                 carTime = System.nanoTime();
             }
